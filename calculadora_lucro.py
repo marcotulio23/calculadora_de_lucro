@@ -23,8 +23,8 @@ if st.button('Calcular Lucro'):
         lucro_pessoal = lucro - lucro_cliente
         st.success("✅ LUCRO DETECTADO!")
         st.write(f"Lucro total: R${lucro:>10.2f}")
-        st.write(f"Lucro do Investidor (30%): R${lucro_cliente:>10.2f}")
-        st.write(f"Lucro do Apostador (70%): R${lucro_pessoal:>10.2f}")
+        st.write(f"Lucro do Investidor (70%): R${lucro_cliente:>10.2f}")
+        st.write(f"Lucro do Apostador (30%): R${lucro_pessoal:>10.2f}")
     elif lucro == 0:
         st.info("😐 Não houve lucro nem prejuízo")
     else:
